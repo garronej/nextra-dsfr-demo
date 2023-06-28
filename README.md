@@ -36,7 +36,7 @@ cd nextra-dsfr-demo
 # Edit next.config.js to have "theme": "nextra-theme-docs" (Instead of nextra-theme-dsfr)
 yarn 
 yarn add nextra-theme-docs
-rm -rf .next && rm -rf node_modules/nextra-theme-docs/dist && cp -r ../nextra/packages/nextra-theme-docs/dist node_modules/nextra-theme-docs/dist
+rm -rf .next && rm -rf node_modules/nextra-theme-docs/dist && cp -r ../nextra/packages/nextra-theme-docs/dist node_modules/nextra-theme-docs/dist && yarn dev
 
 # Each time you change the sources of ../nextra/packages/nextra-theme-docs/src/* you must re-run
 # the last command.  
