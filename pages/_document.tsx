@@ -1,1 +1,1 @@
-export { default } from "nextra-theme-dsfr-docs/_document";
+export { default } from "@codegouvfr/nextra-theme-dsfr/_document";

@@ -1,6 +1,6 @@
 const withNextra = require("nextra")({
   //theme: 'nextra-theme-docs',
-  "theme": "nextra-theme-dsfr-docs",
+  "theme": "@codegouvfr/nextra-theme-dsfr",
   "themeConfig": "./theme.config.tsx",
 });
 
@@ -13,7 +13,7 @@ const nextConfig = {
     });
     return config;
   },
-  "transpilePackages": ["nextra-theme-dsfr-docs", "@codegouvfr/react-dsfr", "tss-react"]
+  "transpilePackages": ["@codegouvfr/nextra-theme-dsfr", "@codegouvfr/react-dsfr", "tss-react"]
 };
 
 module.exports = withNextra(nextConfig);
