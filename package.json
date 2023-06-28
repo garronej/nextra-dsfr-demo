@@ -18,9 +18,15 @@
   },
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
-    "next": "^13.0.6",
-    "nextra": "latest",
-    "nextra-theme-docs": "latest",
+    "@codegouvfr/react-dsfr": "^0.65.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/server": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.6",
+    "next": "^13.4.7",
+    "nextra": "^2.8.0",
+    "nextra-theme-docs": "^2.8.0",
+    "nextra-theme-dsfr-docs": "^0.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

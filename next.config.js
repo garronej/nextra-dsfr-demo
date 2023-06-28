@@ -1,6 +1,19 @@
-const withNextra = require('nextra')({
-  theme: 'nextra-theme-docs',
-  themeConfig: './theme.config.tsx',
-})
+const withNextra = require("nextra")({
+  //theme: 'nextra-theme-docs',
+  "theme": "nextra-theme-dsfr-docs",
+  "themeConfig": "./theme.config.tsx",
+});
 
-module.exports = withNextra()
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  "webpack": config => {
+    config.module.rules.push({
+      "test": /\.woff2$/,
+      "type": "asset/resource"
+    });
+    return config;
+  },
+  "transpilePackages": ["nextra-theme-dsfr-docs", "@codegouvfr/react-dsfr", "tss-react"]
+};
+
+module.exports = withNextra(nextConfig);
