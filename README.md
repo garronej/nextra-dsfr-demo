@@ -7,7 +7,7 @@ This is a template for creating documentation with [Nextra](https://nextra.site)
 ## Local Development
 
 ```bash
-git clone https://github.com/codegouvfr/nextra-dsfr-demo
+git clone https://github.com/garronej/nextra-dsfr-demo
 cd nextra-dsfr-demo
 yarn
 yarn dev
