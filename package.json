@@ -1,7 +1,7 @@
 {
-  "name": "nextra-docs-template",
+  "name": "nextra-dsfr-demo",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Nextra dsfr docs demo",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,13 +12,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/codegouvfr/nextra-dsfr-demo.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "u/garronej",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
-  },
   "homepage": "https://nextra.react-dsfr.fr",
   "dependencies": {
     "@codegouvfr/react-dsfr": "^0.65.0",
