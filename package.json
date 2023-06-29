@@ -18,7 +18,7 @@
   "homepage": "https://nextra.react-dsfr.fr",
   "dependencies": {
     "@codegouvfr/nextra-theme-dsfr": "^0.0.2",
-    "@codegouvfr/react-dsfr": "^0.65.0",
+    "@codegouvfr/react-dsfr": "^0.65.2",
     "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.0",
