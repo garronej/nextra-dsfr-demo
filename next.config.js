@@ -13,7 +13,11 @@ const nextConfig = {
     });
     return config;
   },
-  "transpilePackages": ["@codegouvfr/nextra-theme-dsfr", "@codegouvfr/react-dsfr", "tss-react"]
+  "transpilePackages": [
+    "@codegouvfr/nextra-theme-dsfr",
+    "@codegouvfr/react-dsfr",
+    "tss-react"
+  ]
 };
 
 module.exports = withNextra(nextConfig);
