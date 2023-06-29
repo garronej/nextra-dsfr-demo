@@ -1,16 +1,11 @@
 const withNextra = require("nextra")({
-  //theme: 'nextra-theme-docs',
+  //"theme": 'nextra-theme-docs',
   "theme": "@codegouvfr/nextra-theme-dsfr",
   "themeConfig": "./theme.config.tsx",
 });
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /*
-  "experimental": {
-    "appDir": true
-  },
-  */
   "webpack": config => {
     config.module.rules.push({
       "test": /\.woff2$/,
