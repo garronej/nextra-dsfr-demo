@@ -1,15 +1,18 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
-  }
+    "home": {
+        "title": "Accueil",
+        "type": "page",
+        "href": "/"
+    },
+    "docs": {
+        "title": "Documentation",
+        "type": "page",
+        "href": "/docs"
+    },
+    "playground": {
+        "title": "Playground",
+        "type": "page",
+        "href": "https://play.panda-css.com/",
+        "newWindow": true
+    }
 }

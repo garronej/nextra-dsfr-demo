@@ -8,7 +8,6 @@
     "start": "next start",
     "predev": "only-include-used-icons",
     "prebuild": "only-include-used-icons"
-
   },
   "repository": {
     "type": "git",
@@ -18,8 +17,8 @@
   "license": "MIT",
   "homepage": "https://nextra.react-dsfr.fr",
   "dependencies": {
+    "@codegouvfr/nextra-theme-dsfr": "^0.0.2",
     "@codegouvfr/react-dsfr": "^0.65.0",
-    "@codegouvfr/nextra-theme-dsfr":"^0.0.2",
     "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.0",
@@ -32,6 +31,7 @@
   },
   "devDependencies": {
     "@types/node": "18.11.10",
+    "sass": "^1.63.6",
     "typescript": "^5.1.5"
   }
 }
