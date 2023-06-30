@@ -59,15 +59,6 @@ export default function RootLayout({ children }: { children: JSX.Element; }) {
 									"href": "/",
 									"title": "Accueil - Nom de l’entité (ministère, secrétariat d‘état, gouvernement)"
 								}}
-								quickAccessItems={[
-									{
-										"iconId": "ri-book-2-fill",
-										"linkProps": {
-											"href": "/docs",
-										},
-										"text": "Documentation"
-									}
-								]}
 								navigation={<Navigation />}
 							/>
 							<div style={{

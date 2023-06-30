@@ -11,11 +11,17 @@ export function Navigation() {
 		<MainNavigation
 			items={[
 				{
-					"text": "Home",
+					"text": "Acceuil",
 					"linkProps": {
 						"href": "/"
 					},
 					"isActive": segment === null
+				},
+				{
+					"text": "Documentation",
+					"linkProps": {
+						"href": "/docs"
+					}
 				}
 			]}
 		/>
