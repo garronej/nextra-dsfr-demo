@@ -63,10 +63,10 @@
   dependencies:
     tss-react "^4.8.6"
 
-"@codegouvfr/react-dsfr@^0.65.2":
-  version "0.65.2"
-  resolved "https://registry.yarnpkg.com/@codegouvfr/react-dsfr/-/react-dsfr-0.65.2.tgz#771806bbfff3475afd04161a3abffbff6631a8a0"
-  integrity sha512-c+uKs4nBbEXYkqpTqZj8V9Qo3YTVqtK54X6GgDfZVsw1pPfstEPKSCiEInI+Ipzugv+HaNpPdMoBRRlgor7ZzA==
+"@codegouvfr/react-dsfr@^0.74.2":
+  version "0.74.2"
+  resolved "https://registry.yarnpkg.com/@codegouvfr/react-dsfr/-/react-dsfr-0.74.2.tgz#81ebfcccbc9a26d97f9044b6b831c8611e6d4ad1"
+  integrity sha512-QVfo/4xaqAq7ynDKLV/VmXV1pyOeDx2NdP+8kspE6eOeEO+DkwvDgDl2sT+iPmKIUw4+X7rNr5m03BDtG8AAeQ==
   dependencies:
     tsafe "^1.6.3"
 
