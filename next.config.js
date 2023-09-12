@@ -1,11 +1,13 @@
-const withNextra = require("nextra")({
+import nextra from "nextra";
+
+const withNextra = nextra({
   //"theme": 'nextra-theme-docs',
   "theme": "@codegouvfr/nextra-theme-dsfr",
   "themeConfig": "./theme.config.tsx",
 });
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+ const nextConfig = {
   "webpack": config => {
     config.module.rules.push({
       "test": /\.woff2$/,
@@ -20,4 +22,5 @@ const nextConfig = {
   ]
 };
 
-module.exports = withNextra(nextConfig);
+export default withNextra(nextConfig);
+

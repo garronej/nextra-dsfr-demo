@@ -1,0 +1,28 @@
+{
+  "user": "keycloakify",
+  "repo": "docs.keycloakify.dev",
+  "branch": "v7",
+  "docsPath": "",
+  "filePaths": [
+    "README.md",
+    "SUMMARY.md",
+    "adding-text-keys.md",
+    "build-options.md",
+    "context-persistence.md",
+    "contributing.md",
+    "email-customization.md",
+    "email-domain-acceptlist.md",
+    "environnement-variables.md",
+    "how-it-works.md",
+    "keycloak-error-in-log.md",
+    "keycloakify-in-my-app.md",
+    "limitations.md",
+    "migration-guides/README.md",
+    "migration-guides/readme-1.md",
+    "migration-guides/v6-greater-than-v7.md",
+    "migration-guides/v6.x-greater-than-v6.12.md",
+    "realtime-input-validation.md",
+    "terms-and-conditions.md"
+  ],
+  "nestedMeta": {}
+}

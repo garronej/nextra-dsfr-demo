@@ -1,13 +1,15 @@
 {
   "name": "nextra-dsfr-demo",
   "version": "0.0.1",
+  "type": "module",
   "description": "Nextra dsfr docs demo",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "predev": "only-include-used-icons",
-    "prebuild": "only-include-used-icons"
+    "predev": "only-include-used-icons && yarn fetch-remote-filepaths",
+    "prebuild": "only-include-used-icons && yarn fetch-remote-filepaths",
+    "fetch-remote-filepaths": "tsx scripts/fetch-remote-filepaths.ts"
   },
   "repository": {
     "type": "git",
@@ -27,7 +29,8 @@
     "nextra": "^2.8.0",
     "nextra-theme-docs": "^2.8.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tsx": "^3.12.7"
   },
   "devDependencies": {
     "@types/node": "18.11.10",
