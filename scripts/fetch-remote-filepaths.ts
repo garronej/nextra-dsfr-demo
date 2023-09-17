@@ -66,6 +66,8 @@ async function fetchRemoteFilePaths({
   };
   const json = JSON.stringify(result, null, 2);
 
+  fs.mkdir(path.dirname(outputPath), { recursive: true });
+
   await fs.writeFile(outputPath, json, 'utf8');
 
   console.log(`✅ Remote files from "${url}" saved!`);
