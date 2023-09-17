@@ -1,0 +1,19 @@
+a,
+button,
+input,
+input[type=checkbox] + label::before,
+input[type=radio] + label::before,
+input[type=button],
+input[type=image],
+input[type=reset],
+input[type=submit],
+select,
+textarea,
+[tabindex],
+video[controls],
+audio[controls],
+[contenteditable]:not([contenteditable=false]),
+details,
+details > summary:first-of-type {
+    outline-style: unset;
+}
