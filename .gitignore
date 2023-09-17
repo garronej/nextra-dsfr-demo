@@ -1,2 +1,4 @@
 .next
 node_modules
+/remote-files
+yarn-error.log

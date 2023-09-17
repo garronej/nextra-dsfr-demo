@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "predev": "only-include-used-icons",
-    "prebuild": "only-include-used-icons"
+    "predev": "only-include-used-icons && yarn fetch-remote-filepaths",
+    "prebuild": "only-include-used-icons && yarn fetch-remote-filepaths",
+    "fetch-remote-filepaths": "ts-node --skipProject --compilerOptions '{\"incremental\":false}' scripts/fetch-remote-filepaths.ts"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,9 @@
   "devDependencies": {
     "@types/node": "^20.6.2",
     "sass": "^1.67.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.1",
+    "node-fetch": "^2.6.7",
+    "@types/node-fetch": "^2.6.5"
   }
 }

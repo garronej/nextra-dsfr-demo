@@ -1,0 +1,52 @@
+import { RemoteContent } from 'nextra/data'
+
+import { GetStaticPaths, GetStaticProps } from 'next'
+import { buildDynamicMDX, buildDynamicMeta } from 'nextra/remote'
+import json from '../../../remote-files/v7.json' 
+
+export const { user, repo, branch, docsPath, filePaths } = json
+
+{/* https://github.com/dotansimha/graphql-yoga/blob/main/website/src/lib/v3-get-static-props.ts */}
+
+export const getStaticPaths = async () => ({
+  fallback: 'blocking',
+  paths: filePaths
+    // this fix `TOO MANY REDIRECTS` error in CF
+    .map((filePath) => filePath.replace(/\/?index\.mdx?$/, ''))
+    .map((filePath) => ({
+      params: { slug: filePath.replace(/\.mdx?$/, '').split('/') },
+    })),
+})
+
+export const getStaticProps = async ({ params }) => {
+  const path = params?.slug?.join('/') ?? 'index'
+  const foundPath = filePaths.find((filePath) => filePath.startsWith(path))
+
+  const baseURL = `https://raw.githubusercontent.com/${user}/${repo}/${branch}/${docsPath}${foundPath}`
+  const response = await fetch(baseURL)
+  const data = await response.text()
+
+  const mdx = await buildDynamicMDX(data, {
+    defaultShowCopyCode: true,
+    codeHighlight: false,
+    mdxOptions: {
+      remarkPlugins: [ ],
+      //TODO: use mdx
+      format: "md"
+    },
+  })
+
+  const meta = await buildDynamicMeta();
+
+  console.log(meta.__nextra_pageMap[1].children.find((x) => x.name === "v7"));
+
+  return {
+    props: {
+      ...mdx,
+      //...meta,
+      __nextra_pageMap: meta.__nextra_pageMap[1].children.find((x) => x.name === "v7").children
+    },
+  }
+}
+
+<RemoteContent />
